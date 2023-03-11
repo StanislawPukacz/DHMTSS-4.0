@@ -1,13 +1,3 @@
-//Congratulations and welcome to Digital-Hit-Me-Target Scoring System created and made by Stachu.
-//Version 4.0
-
-//+ 1x ultrasonic unit to meassure the distance
-//+ 1x addressabe LED to show distance status (R /G /B) + 1x 330 Ohm resistor
-//+ 2x MAX7219 to display the acheved points
-//+ automatic meassurment of the road witdh at startup to determine the max value [cm]
-//+ calculating points regarding to distance from the ultrasonic unit (0 - 100)
-
-// Required Arduino libraries:
 #include <MD_Parola.h>
 #include <MD_MAX72xx.h>
 #include <SPI.h>
