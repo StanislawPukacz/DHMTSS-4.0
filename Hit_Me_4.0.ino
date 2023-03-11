@@ -45,8 +45,8 @@ float abcdefghijk;
 float percentage;
 int roadWidth;
 int messFrom;
-int delayDisplay = 0; // setting up the delay of showing the achieved points; i.e. a value of 0 means no delay - instant showing the points parallel to the LED-light, 1000 shows the points 1 second after the LED-light [value in milliseconds]
-int probe = 35; // setting up the sensitivity; i.e. a value of 1 means ultrafast measurment, 100 very slow [value in milliseconds]
+int delayDisplay = 0; 
+int probe = 35;
 long duration;
 int distance;
 
@@ -319,7 +319,7 @@ void loop() {
   delay(delayDisplay);
   myDisplay.setTextAlignment(PA_CENTER);  
   myDisplay.print(String(points));
-  delay(300); // uncomment the lines 332 - 335 to clear the result every (xxxx) milliseconds after triggering; i.e. a value of 3000 means that the achieved score and LED will turn off after 3 seconds. Next measure is possible only after the setted time (in this case 3 seconds) [value in milliseconds]
+  delay(300);
 //  myDisplay.displayClear();
 //  leds[0] = CRGB(0, 0, 0);
 //  FastLED.show();   
