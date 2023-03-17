@@ -46,7 +46,7 @@ float percentage;
 int roadWidth;
 int messFrom;
 int delayDisplay = 0; 
-int probe = 35;
+int probe = 1;
 long duration;
 int distance;
 
@@ -319,9 +319,9 @@ void loop() {
   delay(delayDisplay);
   myDisplay.setTextAlignment(PA_CENTER);  
   myDisplay.print(String(points));
-  delay(300);
-//  myDisplay.displayClear();
-//  leds[0] = CRGB(0, 0, 0);
-//  FastLED.show();   
+// delay(300);
+ myDisplay.displayClear();
+ leds[0] = CRGB(0, 0, 0);
+ FastLED.show();   
  }
 }
